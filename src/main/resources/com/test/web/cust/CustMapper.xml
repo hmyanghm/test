@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test.web.cust.CustMapper">
+    
+	<!-- <select id="selectByIdPw" resultType="Customer">
+       SELECT CMAIL, CPWD, CNAME FROM CUSTOMER WHERE CMAIL LIKE #{cmail} AND CPWD LIKE #{cpwd}
+    </select>
+    
+    <insert id="insertCustomer" parameterType="Customer">
+         INSERT INTO CUSTOMER (CMAIL, CPWD, CNAME) VALUES 
+         (#{cmail}, #{cpwd}, #{cname})
+    </insert>
+    
+    <select id="existId" resultType="int">
+    	SELECT COUNT(*) FROM CUSTOMER WHERE CMAIL LIKE #{cmail}
+    </select> -->
+    
+     <select id="rowCount" resultType="int">
+    	SELECT COUNT(*) FROM CUSTOMER
+    </select>
+    
+</mapper>
